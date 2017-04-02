@@ -7,7 +7,6 @@ app.controller('chatController', function($scope, $rootScope, $localStorage, $ht
     });
     $scope.message = [];
     socket.on('updatechat', function(username, data) {
-        console.log(username + '   ' + $localStorage.username)
         if ($localStorage.username == username) {
             var cls = "mymsg";
         } else if (username == "SERVER") {

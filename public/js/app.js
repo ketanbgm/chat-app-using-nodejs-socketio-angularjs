@@ -8,7 +8,7 @@ app.config(function($routeProvider) {
         .when('/chat', {
             resolve: {
                 "check": function($location, $rootScope, $localStorage) {
-                    if (!$localStorage) {
+                    if (!$localStorage.username || !$localStorage.room) {
                         $location.path('/');
                     }
                 }
