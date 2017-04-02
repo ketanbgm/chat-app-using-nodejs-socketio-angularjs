@@ -1,2 +1,4 @@
 # chat-app-using-nodejs-socketio-angularjs
-## run server.js file
+## installation
+
+Run server.js file
