@@ -22,6 +22,9 @@ app.controller('chatController', function($scope, $rootScope, $localStorage, $ht
             classes: cls
         });
         $scope.$apply();
+        var off = $('li:last-child').offset().top;
+        $('#chatBox').scrollTop(off);
+
     });
 
     $scope.sendMessage = function() {
